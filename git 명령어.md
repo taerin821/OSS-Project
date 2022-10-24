@@ -21,15 +21,6 @@
 * git 사용 환경 설정 확인하고 변경할 수 있다.  
 <img src="OSS-Project/image/git_config.png" width="600" height="350">
 
-##  git status  
-* 파일들의 가능한 상태를 확인할 수 있다. 
-* 작업 디렉토리(working directory)와 스테이징 영역(staging area)의 상태를 확인하기 위해 사용한다.  
-<img src="OSS-Project/image/git_status.png" width="600" height="300">
-
-##  git status  
-* 파일들의 가능한 상태를 확인할 수 있다.
-* 작업 디렉토리(working directory)와 스테이징 영역(staging area)의 상태를 확인하기 위해 사용한다.  
-<img src="OSS-Project/image/git_status.png" width="600" height="300">
 
 ##  git add
 * 작업 디렉토리 상의 변경 내용을 스테이징 영역에 추가하기 위해 사용하는 명령어.
@@ -57,5 +48,18 @@
     <img src="OSS-Project/image/git_add.png" width="600" height="150">
 
 ##  git log
+* git log는 현재 브랜치의 커밋 이력을 볼 수 있는 명령어이다  
+<img src="OSS-Project/image/git_logpng.png" width="600" height="150">   
+
+    ``` $ git log ```  : 현재 브랜치의 커밋 이력을 보는 명령어, HEAD와 관련된 커밋들이 자세하게 나온다  
+    ``` $ git log --oneline  ```  : 커밋 이력 중 커밋 ID 와 타이틀 메시지만 조회   
+    ``` $ git log --oneline --decorate --graph --all  ```  : 모든 브랜치의 커밋 이력을 보는 명령어   
+    ``` $ git log -n <숫자>  ```  : 현재 브랜치의 커밋 이력을 보는 명령어   
+
+##  git status  
+* 파일들의 가능한 상태를 확인할 수 있다. 
+* 작업 디렉토리(working directory)와 스테이징 영역(staging area)의 상태를 확인하기 위해 사용한다.  
+<img src="OSS-Project/image/git_status.png" width="600" height="300">
+
 
 
