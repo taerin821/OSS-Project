@@ -36,6 +36,43 @@
 
     <img src="./image/git_add.png" width="600" height="150">
 
+## git push
+* 로컬 저장소의 commit 내역을 remote 저장소로 전송한다.
+* ``` -u ``` 옵션은 upstream repository를 설정해준다. 즉 한번 설정한 후로는 git push, git pull 만 간단히 쓸 수 있다.
+    ```
+    git push [remote] [branch]
+
+    git push -u origin main
+    ```
+
+## git pull 
+* 원격저장소로 부터 변경된 내용을 가지고 온 후 병합(merge)
+* pull = fetch + merge 와 같은 의미!
+    ```
+    git pull
+    ```
+
+##  git fetch
+* 원격저장소로 부터 변경된 내용을 가지고 온 후 병합 x
+* 변경된 내역을 가지고 온 후 검토 후에 merge 할 수 있어서 충돌 방지
+* --prune 옵션으로 remote 저장소에 지워진 브랜치를 local 반영하여 local의 불필요한 branch를 삭제한다.
+    ```
+    git fetch [remote]
+
+    git fetch --prune
+    ```
+
+## git merge 
+* 브랜치를 병합하는 명령어
+* 협업 과정에서 같은 이름의 파일 안에 수정한 부분이 겹칠 때 충돌(conflit)이 발생 할 수 있다.
+
+## git rebase
+* 브랜치를 병합하는 명령어로 merge와 같은 기능이지만,
+merge의 경우 병합 할 브랜치에서 기록한 모든 commit이 master의 commit으로 기록된다.
+* rebase의 경우 작업 중 남겼던 commmit 중 불필요한 것들을 생략시키고 필요한 commit만 남겨서 master 병합이 가능하다.
+* -i는 interactive라는 옵션이다. 해당 옵션을 사용하면 중간에 낀 커밋 메세지를 수정할 수 있다.
+
+
 ##  git log
 * git log는 현재 브랜치의 커밋 이력을 볼 수 있는 명령어이다  
 <img src="./image/git_logpng.png" width="600" height="150">   
