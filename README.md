@@ -18,6 +18,6 @@
     * fast forward merge, 3-way merge, rebase
     * reset revert  
 * 다음의 내용을 정리한 1-2페이지의 cheat sheet 제작
-    * [git cheat sheet](https://github.com/taerin821/OSS-Project/blob/c4c8e08bd2fad7a637bfa104cbedd4adec145a2f/git%20cheat%20sheet.md)
+    * [git cheat sheet](https://github.com/taerin821/OSS-Project/blob/87650b9381a4ea7826d7bd1a51e9368c7043fc38/git%20cheat%20sheet.md)
     * [github cheat sheet]()
 
